@@ -132,7 +132,6 @@ $(document).ready(function () {
     Array.from(AllResizer).forEach((e) => {
       resizer.push($(e).attr("id"));
     });
-    // console.log(Id);
 
     // Handle the mousedown event
     resizer.forEach((element) => {
@@ -152,10 +151,6 @@ $(document).ready(function () {
           }
           return true;
         });
-
-        console.log(e);
-        console.log(parentElement);
-        console.log(nextParentElement);
 
         x = e.clientX;
         y = e.clientY;
