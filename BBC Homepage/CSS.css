@@ -1,0 +1,2200 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: ReithSans, Arial, Helvetica, freesans, sans-serif;
+}
+#topdiv{
+    width: 1349px;
+    height: 40px;
+    background-color: white;
+    display: block;
+    position: relative;
+}
+#topheader{
+    width: 1248px;
+    height: 40px;
+    margin: 0 40px 0 40px;
+    padding: 0 16px 0 16px;
+    background-color: white;
+    max-width: 1248px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 29.51px;
+}
+.mainlogo{
+    width: 100px;
+    height: 32px;
+    margin: 2px 0 0 0;
+    display: block;
+    float: left;
+    
+}
+.signin{
+    height:  29.5px;
+    width: 142.078px;
+    padding: 6px 20px 0px 12px;
+    min-height: 29.51px;
+    min-width: 142.09px;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    border-left: solid grey 1px;
+    display: block;
+    float: left;
+    
+}
+.signin:hover{
+    border-bottom: 4px solid  #1188BB;
+}
+.signin img{
+    position: relative;
+    top: -2px;
+    display: block;
+    float: left;
+}
+.signintext{
+    height: 29px;
+    width: 41.8594px;
+    margin: 0 0 0 6px;
+    min-height: auto;
+    min-width: auto;
+    color: black;
+    
+}
+.home{
+    height: 29.5px;
+    width: 36.6875px;
+    padding: 6px 20px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    float: left;
+    border-right: solid grey 1px;
+}
+.home:hover{
+    
+    border-bottom: 4px solid  #000000;
+}
+.news{
+    height: 29.5px;
+    width: 33.75px;
+    padding: 6px 20px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    display: block;
+    float: left;
+}
+.news:hover{
+    
+    border-bottom: 4px solid  #BB1919;
+}
+.sport{
+     
+    height: 29.5px;
+    width: 34.6406px;
+    padding: 6px 20px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    display: block;
+    float: left;
+}
+.sport:hover{
+    
+    border-bottom: 4px solid  #FFD230;
+}
+.reel{
+    
+    height: 29.5px;
+    width: 27.4844px;
+    padding: 6px 20px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    display: block;
+    float: left;
+}
+.reel:hover{
+    
+    border-bottom: 4px solid  #0068FF;
+}
+.worklife{
+    
+    height: 29.5px;
+    width: 53.25px;
+    padding: 6px 20px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    display: block;
+    float: left;
+}
+.worklife:hover{
+    
+    border-bottom: 4px solid  #0052A1;
+}
+.travel{
+    
+    height: 29.5px;
+    width: 38.25px;
+    padding: 6px 20px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    display: block;
+    float: left;
+}
+.travel:hover{
+    
+    border-bottom: 4px solid  #589E50;
+}
+.future{
+    
+    height: 29.5px;
+    width: 40.7031px;
+    padding: 6px 20px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    display: block;
+    float: left;
+}
+.future:hover{
+    
+    border-bottom: 4px solid  #002856;
+    
+}
+
+.culture{
+    
+    height: 29.5px;
+    width: 46.0312px;
+    padding: 6px 20px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    display: block;
+    float: left;
+}
+
+.culture:hover{
+    
+    border-bottom: 4px solid  #482878;
+}
+.more{
+    
+    height: 29.5px;
+    width: 68px;
+    padding: 6px 34px 0px 20px;
+    min-height: 29.51px;
+    color: black;
+    text-decoration: none;
+    border-right: solid grey 1px;
+    display: block;
+    float: left;
+}
+.more:hover{
+    
+    border-bottom: 4px solid  #262626;
+}
+
+.searchbar{
+    
+    height: 24px;
+    width: 200px;
+    padding: 8px 0 7px 8px;
+    display: block;
+    float: left;
+}
+
+.searchbar input{
+    
+    height: 24px;
+    width: 160px;
+    padding: 0 0 0 6px;
+    min-height: 24px;
+    border: none;
+    background-color: #DCDCDC;
+    font-size: 13px;
+    font-weight: 700;
+}
+.searchbar button{
+    height: 24px;
+    width: 30px;
+    border: none;
+    background-color: #DCDCDC;
+}
+#seconddiv{
+    height: 56px;
+    width: 1349px;
+    display: block;
+    background-color: #BB1919;
+    /*border-top: solid white 1px;*/
+}
+#newssvg{
+    height: 47px;
+    width: 1248px;
+    display: block;
+    margin: 0 40px 0 40px;
+    padding: 0 16px 0 16px;
+    background-color: white;
+    background-color:  #BB1919;
+}
+#newssvg img{
+    height: 39px;
+    width: 123px;
+    margin: 8px 0 0 7px;
+}
+#thirddiv{
+    height: 36px;
+    width: 1349px;
+    display: block;
+    background-color: #BB1919;
+}
+#navbar{
+    height: 36px;
+    width: 1248px;
+    margin: 0 40px 0 40px;
+    padding: 0 16px 0 16px;
+    max-width: 1248px;
+    display: block;
+    background-color: #BB1919;
+}
+#navhome{
+    height: 18px;
+    width: 61.3594px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navhome:link{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navhome:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navhome:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navhome{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+
+}
+#navcoronavirus{
+     height: 18px;
+    width: 100.484px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navcoronavirus:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navcoronavirus:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navcoronavirus{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navclimate{
+     height: 18px;
+    width:  72.4688px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navclimate:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navclimate:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navclimate{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navvideo{
+     height: 18px;
+    width: 60.5625px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navvideo:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navvideo:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navvideo{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navworld{
+     height: 18px;
+    width:  61.3125px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navworld:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navworld:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navworld{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navasia{
+     height: 18px;
+    width: 52.2344px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navasia:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navasia:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navasia{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navuk{
+     height: 18px;
+    width: 44.4531px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navuk:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navuk:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navuk{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navbusiness{
+     height: 18px;
+    width: 81.8125px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navbusiness:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navbusiness:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navbusiness{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navtech{
+     height: 18px;
+     width: 54.5781px;
+     padding: 8px 0 6px 0;
+     display: block;
+     float: left;
+    text-decoration: none;
+    color: white;
+}
+#navtech:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navtech:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navtech{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navscience{
+     height: 18px;
+    width:  74.8125px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navscience:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navscience:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navscience{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navstories{
+     height: 18px;
+    width: 68.5781px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navstories:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navstories:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navstories{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navea{
+     height: 18px;
+    width: 153.406px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navea:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navea:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navea{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navhealth{
+     height: 18px;
+    width:  65.4688px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navhealth:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navhealth:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navhealth{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navworldnews{
+     height: 18px;
+    width: 121.734px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navworldnews:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navworldnews:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navworldnews{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navinpictures{
+     height: 18px;
+    width: 91.1406px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navinpictures:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navinpictures:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+.navinpictures{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#navmore{
+     height: 18px;
+    width: 61.9062px;
+    padding: 8px 0 6px 0;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+#navmore:hover{
+    border-bottom: 4px solid  #FFFFFF;
+}
+#navmore:active{
+    border-bottom: 4px solid  #FFFFFF;
+}
+
+.navmore{
+    height: auto;
+    width: auto;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border-right: solid grey 1px;
+}
+#fourthdiv{
+     height: 50px;
+     width: 1349px;
+     background-color: white;
+}
+#insidediv{
+    height: 36px;
+    width: 1248px;
+    margin: 0 40px 0 40px;
+    padding: 0 16px 0 16px;
+    max-width: 1248px;
+    background-color: white;
+}
+#coronaviruspandemic{
+    height: auto;
+    width: auto;
+    padding: 0 0 5px 0;
+    color: black; 
+    float: left;
+}
+.coronaviruspandemic{
+    height: 24px;
+    width: 206.484px;
+    margin:  8px 0 8px 0;
+    padding: 0 8px 0 8px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    border-bottom: 4px solid  #BB1919;
+}
+#coronavirusstories{
+    height: 18px;
+    width: 185.062px;
+    padding: 12px 0 2px 0;
+    text-decoration: none;
+    float: left;
+}
+.coronavirusstories{
+    height: auto;
+    width: auto;
+    border-left: 1px solid  #DCDCDC;
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    color:black;
+}
+#coronavirusstories:hover{
+    border-bottom: 4px solid  #BB1919;
+    
+}
+.southsodan{
+    width: 490px;
+    height: 272px;
+}
+#fifthdiv{
+    height: 2246.53px;
+    width: 1349px;
+}
+#gel-wrap{
+    height: 2246.53px;
+    width: 1280px;
+    margin: 0 35px 0 35px;
+    padding: 0 16px 0 16px;
+    max-width: 1280px;
+}
+#inside1stdiv{
+    height: 663.812px;
+    width: 1248px;
+    box-sizing: border-box;
+}
+#howtodeliver{
+    height: 621.812px;
+    width: 505.594px;
+    padding: 0 0 16px 16px;
+    min-height: auto;
+    min-width: auto;
+    display: flex;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    word-wrap: break-word;
+}
+.howtodeliver{
+    height: auto;
+    width: auto;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    letter-spacing: -1px;
+    position: relative;
+    top: 6px;
+    color: #696969;
+}
+.howtodeliver:hover{
+    color: #1380A1;
+    text-decoration: underline;
+
+}
+.anchordeliver{
+    text-decoration: none;
+}
+.deliveringvaccines{
+    height:auto;
+    width: auto;
+    font-size: 14.5px;
+    position: relative;
+    top: 15px;
+    color: #696969;
+}
+.timeslot{
+    width: auto;
+    height: auto;
+    margin: 26px 0 0 0;
+    padding: 0 7px 0 0;
+}
+.africa{
+    width:auto;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 0 0 7px;
+    position: relative;
+    top: -3px;
+    letter-spacing: 0.4px;
+    color: black;
+    border-left: solid 1px grey;
+
+}
+.africa:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+#indiatoallow{
+    float: left;
+    height: 319.906px;
+    width: 246.797px;
+    padding: 0 0 16px 16px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+}
+.anchorallow{
+    text-decoration: none;
+}
+.foreigntourists{
+    width: 235px;
+    heigh:132px;
+}
+.indiatoallow{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.indiatoallow:hover{
+    color: #1380A1;
+    text-decoration: underline;
+
+}
+.firstinstance{
+    height:auto;
+    width: auto;
+    font-size: 14.5px;
+    position: relative;
+    top: 14px;
+    color: #696969;
+}
+.timeslot2{
+     width: auto;
+    height: auto;
+    margin: 38px 0 0 0;
+    padding: 0 7px 0 0;
+}
+.india{
+    width:auto;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 0 0 7px;
+    position: relative;
+    top: -3px;
+    letter-spacing: 0.4px;
+    color: black;
+    border-left: solid 1px grey;
+}
+.india:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+#sydneytoscarp{
+     float: left;
+    height: 319.906px;
+    width: 246.797px;
+    padding: 0 0 16px 16px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+}
+.anchorsydney{
+    text-decoration: none;
+}
+.sydney{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.sydney:hover{
+    color: #1380A1;
+    text-decoration: underline;
+
+}
+.newsouth{
+    width: 235px;
+    heigh:132px;
+}
+.newsouthwales{
+    height:auto;
+    width: auto;
+    font-size: 14.3px;
+    position: relative;
+    top: 14px;
+    color: #696969;
+}
+.timeslot3{
+     width: auto;
+    height: auto;
+    margin: 19px 0 0 0;
+    padding: 0 7px 0 0;
+}
+.australia{
+      width:auto;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 0 0 7px;
+    position: relative;
+    top: -3px;
+    letter-spacing: 0.4px;
+    color: black;
+    border-left: solid 1px grey;
+}
+.australia:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#themystery{
+     float: left;
+    height: 319.906px;
+    width: 246.797px;
+    padding: 0 0 16px 16px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+}
+
+.anchormystrey{
+    text-decoration: none;
+}
+.damages{
+    width: 235px;
+    heigh:132px;
+}
+.mystrey{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.mystrey:hover{
+    color: #1380A1;
+    text-decoration: underline;
+
+}
+.chrissygibson{
+    height:auto;
+    width: auto;
+    font-size: 14px;
+    position: relative;
+    top: 14px;
+    color: #696969;
+}
+.timeslot4{
+     width: auto;
+    height: auto;
+    margin: 38px 0 0 0;
+    padding: 0 7px 0 0;
+}
+.uscanada{
+      width:auto;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 0 0 7px;
+    position: relative;
+    top: -3px;
+    letter-spacing: 0.4px;
+    color: black;
+    border-left: solid 1px grey;
+}
+.uscanada:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#cheapercovid{
+     float: left;
+    height: 319.906px;
+    width: 246.797px;
+    padding: 0 0 16px 16px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+}
+
+.anchorengland{
+    text-decoration: none;
+}
+.england{
+    width: 235px;
+    heigh:132px;
+}
+.cheaper{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.cheaper:hover{
+    color: #1380A1;
+    text-decoration: underline;
+
+}
+.peopleengland{
+    height:auto;
+    width: auto;
+    font-size: 14px;
+    position: relative;
+    top: 14px;
+    color: #696969;
+}
+.timeslot5{
+     width: auto;
+    height: auto;
+    margin: 24px 0 0 0;
+    padding: 0 7px 0 0;
+}
+.uk{
+      width:auto;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 7px 0 7px;
+    position: relative;
+    top: -3px;
+    letter-spacing: 0.4px;
+    color: black;
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+}
+.uk:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+.textbox{
+    padding: 0 0 0 6px;
+}
+
+#whosays{
+     float: left;
+    height: 319.906px;
+    width: 246.797px;
+    padding: 0 0 16px 16px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+}
+
+.anchorwho{
+    text-decoration: none;
+}
+.who{
+    width: 235px;
+    heigh:132px;
+}
+.whosays{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.whosays:hover{
+    color: #1380A1;
+    text-decoration: underline;
+
+}
+.healthorganization{
+    height:auto;
+    width: auto;
+    font-size: 14px;
+    position: relative;
+    top: 14px;
+    color: #696969;
+}
+.timeslot6{
+     width: auto;
+    height: auto;
+    margin: 24px 0 0 0;
+    padding: 0 7px 0 0;
+}
+.health{
+      width:auto;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 7px 0 7px;
+    position: relative;
+    top: -3px;
+    letter-spacing: 0.4px;
+    color: black;
+    border-left: solid 1px grey;
+}
+.health:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+
+#boosterjabs{
+    float: left;
+    height: 319.906px;
+    width: 246.797px;
+    padding: 0 0 16px 16px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+}
+
+.anchorjabs{
+    text-decoration: none;
+}
+.booster{
+    width: 235px;
+    heigh:132px;
+}
+.boosterjabs{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.boosterjabs:hover{
+    color: #1380A1;
+    text-decoration: underline;
+
+}
+.vaccinebooster{
+    height:auto;
+    width: auto;
+    font-size: 14px;
+    position: relative;
+    top: 14px;
+    color: #696969;
+}
+.timeslot7{
+     width: auto;
+    height: auto;
+    margin: 24px 0 0 0;
+    padding: 0 7px 0 0;
+}
+.Uscanada{
+      width:auto;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 7px 0 7px;
+    position: relative;
+    top: -3px;
+    letter-spacing: 0.4px;
+    color: black;
+    border-left: solid 1px grey;
+}
+.Uscanada:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+#inside2nddiv{
+    height: 76px;
+    width: 1248px;
+    min-height: auto;
+    min-width: auto;
+    box-sizing: border-box;
+    padding: 32px 0 16px 0;
+}
+#headingdiv{
+    height: 28px;
+    width: 263.062px;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+}
+.ceheading{
+    height: 28px;
+    width: 255.062px;
+    font-size: 22px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.horizontalline{
+    width: 999px ;
+    float: right;
+    position: relative;
+    top: -14px;
+}
+#anchordeltaplus{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    
+}
+.anchordeltaplus{
+    text-decoration: none;
+}
+.deltaplus{
+    width: 237px;
+    heigh:138px;
+}
+.deltavariant{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.deltavariant:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#superbug{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchorbug{
+    text-decoration: none;
+}
+.superbug{
+    width: 237px;
+    heigh:138px;
+}
+.concerns-covid{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.concerns-covid:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#india-struggle{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchorstruggle{
+    text-decoration: none;
+}
+.indiastruggle{
+    width: 237px;
+    heigh:138px;
+}
+.india-struggling{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.india-struggling:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#deadly-wave{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchorsecondwave{
+    text-decoration: none;
+}
+.secondwave{
+    width: 237px;
+    heigh:138px;
+}
+.deadly-secondwave{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.deadly-secondwave:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#different-jabs{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-jabs{
+    text-decoration: none;
+}
+.different-jabs{
+    width: 237px;
+    heigh:138px;
+}
+.different-jabs{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.different-jabs:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+
+#insidethirddiv{
+    height: 76px;
+    width: 1248px;
+    min-height: auto;
+    min-width: auto;
+    box-sizing: border-box;
+    padding: 32px 0 16px 0;
+    margin: 210px 0 0 0;
+}
+#headingdiv3{
+    height: 35px;
+    width: 263.062px;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+}
+.asheading{
+    height: 28px;
+    width: 255.062px;
+    font-size: 22px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.horizontalline2{
+    width: 1025px ;
+    float: right;
+    position: relative;
+    top: -20px;
+}
+#EUvaccine{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    
+}
+.anchorEUvaccine{
+    text-decoration: none;
+}
+.EUrollout{
+    width: 237px;
+    heigh:138px;
+}
+.vaccinerollout{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.vaccinerollout:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#astrazeneca-jab{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-astrazeneca{
+    text-decoration: none;
+}
+.health-correspondent{
+    width: auto;
+    heigh:auto;
+}
+
+#US-lockdown{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchor-lockdown-ending{
+    text-decoration: none;
+}
+.US-ending-lockdown{
+    width: 237px;
+    heigh:138px;
+}
+.US-lockdown{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.US-lockdown:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#covid-symptoms{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchor-symptoms{
+    text-decoration: none;
+}
+.cold-coronavirus{
+    width: 237px;
+    heigh:138px;
+}
+.covid-symptoms{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.covid-symptoms:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#vaccines-that-work{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-working-vaccines{
+    text-decoration: none;
+}
+.working-vaccines{
+    width: 237px;
+    heigh:138px;
+}
+.vaccines-that-work{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.vaccines-that-work:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#insidefourthdiv{
+    height: 76px;
+    width: 1248px;
+    min-height: auto;
+    min-width: auto;
+    box-sizing: border-box;
+    padding: 32px 0 16px 0;
+    margin: 300px 0 0 0;
+}
+#headingdiv4{
+    height: 35px;
+    width: 263.062px;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+}
+.whheading{
+    height: 28px;
+    width: 255.062px;
+    font-size: 22px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.horizontalline3{
+    width: 1010px ;
+    float: right;
+    position: relative;
+    top: -20px;
+}
+#indias-biggest-covid{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    
+}
+.anchor-indias-covid{
+    text-decoration: none;
+}
+.indias-drive{
+    width: 237px;
+    heigh:138px;
+}
+.indias-biggest-covid{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.indias-biggest-covid:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#california-struggling{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-california{
+    text-decoration: none;
+}
+.california-contain{
+    width: 237px;
+    heigh:138px;
+}
+.california-struggling{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.california-struggling:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#Coronavirus-in-africa{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchor-cv-africa{
+    text-decoration: none;
+}
+.coronavirus-africa{
+    width: auto;
+    heigh:auto;
+}
+
+#again-infections-in-us{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchor-infections-us{
+    text-decoration: none;
+}
+.infections-us{
+    width: 237px;
+    heigh:138px;
+}
+.again-infections-in-us{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.again-infections-in-us:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#Europe-struggle{
+    height: 290px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-europe-struggle{
+    text-decoration: none;
+}
+.europe-struggle{
+    width: 237px;
+    heigh:138px;
+}
+.Europe-struggle-country-by-country{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.Europe-struggle-country-by-country:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#insidefifthdiv{
+    height: 76px;
+    width: 1248px;
+    min-height: auto;
+    min-width: auto;
+    box-sizing: border-box;
+    padding: 32px 0 16px 0;
+    margin: 310px 0 0 0;
+}
+#headingdiv5{
+    height: 28px;
+    width: 263.062px;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+}
+.veheading{
+    height: 28px;
+    width: 255.062px;
+    font-size: 22px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.horizontalline4{
+    width: 1050px ;
+    float: right;
+    position: relative;
+    top: -14px;
+}
+#professor-jonathan{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    
+}
+.anchor-professor-jonathan{
+    text-decoration: none;
+}
+.van-tam{
+    width: 237px;
+    heigh:138px;
+}
+.professor-jonathan{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.professor-jonathan:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#different-vaccines{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-different-vaccines{
+    text-decoration: none;
+}
+.vaccines-explained{
+    width: 237px;
+    heigh:138px;
+}
+.different-vaccines{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.different-vaccines:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#Pregnant-women-vaccines{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchor-pregnant-women{
+    text-decoration: none;
+}
+.women-vaccines{
+    width: 237px;
+    heigh:138px;
+}
+.Pregnant-women-vaccines{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.Pregnant-women-vaccines:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#pandemics-newnormal{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchor-pandemics{
+    text-decoration: none;
+}
+.pandemics{
+    width: 237px;
+    heigh:138px;
+}
+.pandemics-newnormal{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.pandemics-newnormal:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#R-number{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-R-number{
+    text-decoration: none;
+}
+.fight-covid19{
+    width: 237px;
+    heigh:138px;
+}
+.R-number{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.R-number:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#insidesixthdiv{
+    height: 76px;
+    width: 1248px;
+    min-height: auto;
+    min-width: auto;
+    box-sizing: border-box;
+    padding: 32px 0 16px 0;
+    margin: 190px 0 0 0;
+}
+#headingdiv6{
+    height: 28px;
+    width: 263.062px;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+}
+.rcheading{
+    height: 28px;
+    width: 255.062px;
+    font-size: 22px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.horizontalline5{
+    width: 1050px ;
+    float: right;
+    position: relative;
+    top: -14px;
+}
+#peru-badly-hit{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    
+}
+.anchor-peru{
+    text-decoration: none;
+}
+.peru-hit{
+    width: 237px;
+    heigh:138px;
+}
+.peru-badly-hit{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.peru-badly-hit:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#covid-jab-magnetic{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-magnetic-jab{
+    text-decoration: none;
+}
+.no-magnetic-jab{
+    width: 237px;
+    heigh:138px;
+}
+.covid-jab-magnetic{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.covid-jab-magnetic:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#Uk-closed-borders{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchor-uk-borders{
+    text-decoration: none;
+}
+.uk-borders{
+    width: 237px;
+    heigh:138px;
+}
+.Uk-closed-borders{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.Uk-closed-borders:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#infections-spiked{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+    
+}
+.anchor-spiked{
+    text-decoration: none;
+}
+.spiked-infections{
+    width: 237px;
+    heigh:138px;
+}
+.infections-spiked{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.infections-spiked:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+#africas-covid-rising{
+    height: 200px;
+    width: 245.797px;
+    min-height: auto;
+    min-width: auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.anchor-africas-covid{
+    text-decoration: none;
+}
+.covid-surge-rising{
+    width: 237px;
+    heigh:138px;
+}
+.africas-covid-rising{
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+    top: 4px;
+    color: #696969;
+}
+.africas-covid-rising:hover{
+    color: #1380A1;
+    text-decoration: underline;
+}
+
+
+
+
+
