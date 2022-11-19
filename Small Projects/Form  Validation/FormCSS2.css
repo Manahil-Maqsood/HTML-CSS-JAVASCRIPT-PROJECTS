@@ -1,0 +1,131 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("images.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.form {
+  height: 550px;
+  width: 420px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 6px solid;
+  border-color: #de5285;
+  box-sizing: border-box;
+}
+
+.heading {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.form-field1,
+.form-field2,
+.form-field3,
+.form-field4 {
+  display: block;
+  width: 300px;
+  padding: 4px 10px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  color: grey;
+  border: 1px solid;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+/*.form-field1:focus,
+.form-field2:focus,
+.form-field3:focus,
+.form-field4:focus{
+    background-color: #D8F2FF;
+}*/
+
+.male {
+  margin-left: 6px;
+}
+.female {
+  margin-left: 6px;
+}
+
+#inputmale:checked:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  position: relative;
+  top: -2px;
+  left: -1px;
+  background-color: #de5285;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 0.5px solid white;
+}
+#inputfemale:checked:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  position: relative;
+  top: -2px;
+  left: -1px;
+  background-color: #de5285;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 0.5px solid white;
+}
+.firstname,
+.lastname,
+.email,
+.password,
+.gender,
+.btn1,
+.btn2 {
+  margin-left: 3px;
+}
+
+.btn1 {
+  color: #fff;
+  background-color: #de5285;
+  outline: none;
+  border: none;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn2 {
+  color: #fff;
+  background-color: #de5285;
+  outline: none;
+  border: none;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 15px;
+}

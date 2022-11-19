@@ -1,0 +1,235 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Javascript Form Validation</title>
+    <link href="FormCSS2.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="body">
+    <div class="container">
+      <div class="form">
+        <form
+          method=""
+          action=""
+          name="contactForm"
+          onsubmit="return validateForm()"
+        >
+          <h2 class="heading">Application Form</h2>
+
+          <label class="firstname">Name</label>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="Enter Your Name"
+            class="form-field1"
+            id="firstName"
+            autocomplete="off"
+          />
+          <div class="error" id="firstnameErr"></div>
+
+          <br />
+
+          <label class="lastname">Father Name</label>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Enter Father Name"
+            class="form-field2"
+            id="lastName"
+            autocomplete="off"
+          />
+          <div class="error" id="lastnameErr"></div>
+
+          <br />
+
+          <label class="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            placeholder="Enter Your Email"
+            class="form-field3"
+            id="email"
+            autocomplete="off"
+          />
+          <div class="error" id="emailErr"></div>
+
+          <br />
+
+          <label class="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="form-field4"
+            id="password"
+            autocomplete="off"
+          />
+          <div class="error" id="passwordErr"></div>
+
+          <br />
+
+          <label class="gender">Gender:</label>
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+            id="inputmale"
+            class="inputmale"
+          /><span class="male">Male</span>
+          <input
+            type="radio"
+            name="gender"
+            value="female"
+            id="inputfemale"
+            class="inputfemale"
+          /><span class="female">Female</span>
+          <div class="error" id="genderErr"></div>
+
+          <br />
+
+          <input type="submit" name="submit" class="btn1" />
+          <input type="reset" name="reset" class="btn2" />
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var fname, lname, email, password, gender;
+
+      // Defining a function to validate form
+
+      function validateForm() {
+        // Retrieving the values of form elements
+        fname = document.contactForm.firstName.value;
+        lname = document.contactForm.lastName.value;
+        email = document.contactForm.email.value;
+        password = document.contactForm.password.value;
+        gender = document.contactForm.gender.value;
+
+        var nameErr =
+          (fathernameErr =
+          emailErr =
+          passwordErr =
+          genderErr =
+            true);
+
+        //Validate Name
+        if (fname.length <= 2 || fname.length > 20) {
+          document.getElementById("firstnameErr").innerHTML =
+            "*Please enter your name.";
+        } else {
+          var regex = /^[a-zA-Z\s]+$/;
+          if (regex.test(fname) === false) {
+            document.getElementById("firstnameErr").innerHTML =
+              "*Please enter your valid name.";
+          } else {
+            document.getElementById("firstnameErr").innerHTML = "";
+            nameErr = false;
+          }
+        }
+
+        //Validate Father Name
+        if (lname.length <= 2 || lname.length > 20) {
+          document.getElementById("lastnameErr").innerHTML =
+            "*Please enter your father name.";
+        } else {
+          var regex = /^[a-zA-Z\s]+$/;
+          if (regex.test(lname) === false) {
+            document.getElementById("lastnameErr").innerHTML =
+              "*Please enter valid father name.";
+          } else {
+            document.getElementById("lastnameErr").innerHTML = "";
+            fathernameErr = false;
+          }
+        }
+
+        //Validate Email Address
+        if (email.length <= 2 || email.length > 40) {
+          document.getElementById("emailErr").innerHTML =
+            "*Please enter your email address.";
+        } else {
+          var regex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+          var emailblockReg =
+            /^([\w-\.]+@(?!yahoo.com)(?!hotmail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+
+          if (!regex.test(email)) {
+            document.getElementById("emailErr").innerHTML =
+              "*Please enter your valid email address.";
+          } else if (!emailblockReg.test(email)) {
+            document.getElementById("emailErr").innerHTML =
+              "*No yahoo or hotmail emails.";
+          } else {
+            document.getElementById("emailErr").innerHTML = " ";
+            emailErr = false;
+          }
+        }
+
+        //Validate Password
+        var errors = [];
+        if (password.length < 8) {
+          errors.push("*Your password must be at Least 8 characters.");
+        }
+        if (password.search(/[a-z]/i) < 0) {
+          errors.push("*Your password must contain at least one letter.");
+        }
+        if (password.search(/[0-9]/) < 0) {
+          errors.push("*Your password must contain at least one digit.");
+        }
+        if (errors.length > 0) {
+          document.getElementById("passwordErr").innerHTML =
+            errors.join("<br>");
+        } else {
+          document.getElementById("passwordErr").innerHTML = "";
+          passwordErr = false;
+        }
+
+        //Validate gender
+        if (gender.length <= 0) {
+          document.getElementById("genderErr").innerHTML =
+            "*Please select your gender.";
+        } else {
+          document.getElementById("genderErr").innerHTML = "";
+          genderErr = false;
+        }
+
+        // Prevent the form from being submitted if there are any errors
+        if (
+          nameErr ||
+          fathernameErr ||
+          emailErr ||
+          passwordErr ||
+          genderErr == true
+        ) {
+          return false;
+        } else if (
+          nameErr ||
+          fathernameErr ||
+          emailErr ||
+          passwordErr ||
+          genderErr == false
+        ) {
+          // Creating a string from input data for preview
+          var userData =
+            "You've entered the following details: " +
+            "\n" +
+            "Name: " +
+            fname +
+            "\n" +
+            "Father Name: " +
+            lname +
+            "\n" +
+            "Email: " +
+            email +
+            "\n" +
+            "Password: " +
+            password +
+            "\n" +
+            "Gender: " +
+            gender;
+
+          alert(userData);
+        }
+      }
+    </script>
+  </body>
+</html>

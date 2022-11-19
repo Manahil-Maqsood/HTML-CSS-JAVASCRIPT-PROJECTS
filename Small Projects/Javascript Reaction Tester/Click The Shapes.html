@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>
+      JavaScript Reaction Testers 1Random Shapes, 2Random Color, 3Random Size,
+      4Time Delay, 5Timer, 6Random Position,
+    </title>
+
+    <style type="text/css">
+      #shape {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background-color: blue;
+        display: none;
+        position: relative;
+      }
+      .heading {
+        font-size: 50px;
+        font-family: cursive;
+        font-weight: 200px;
+        color: rebeccapurple;
+        text-align: center;
+      }
+      .output {
+        text-align: center;
+        vertical-align: middle;
+      }
+      body {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="heading">Click The Shapes As Earlier As you Can!!!</h1>
+    <h2 class="output">Your Time: <span id="timeTaken"></span></h2>
+    <h2 class="output">Best Time: <span id="best-time"></span></h2>
+    <div id="shape"></div>
+
+    <script type="text/javascript">
+      var start = new Date().getTime();
+
+      // Get Random Color for Boxes
+
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF".split("");
+        var color = "#";
+
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      // Box Appear
+
+      function doAppear() {
+        var top = Math.random() * 250;
+        var left = Math.random() * 1000;
+        var width = Math.random() * 250 + 100;
+
+        // Get circles
+
+        if (Math.random() > 0.5) {
+          document.getElementById("shape").style.borderRadius = "50%";
+        } else {
+          document.getElementById("shape").style.borderRadius = "0";
+        }
+
+        // Get Random Sized Objects
+
+        document.getElementById("shape").style.backgroundColor =
+          getRandomColor();
+
+        document.getElementById("shape").style.width = width + "px";
+
+        document.getElementById("shape").style.height = width + "px";
+
+        document.getElementById("shape").style.top = top + "px";
+
+        document.getElementById("shape").style.left = left + "px";
+
+        document.getElementById("shape").style.display = "block";
+
+        start = new Date().getTime();
+      }
+
+      // Box Appear again after Click
+      function appearAgain() {
+        setTimeout(doAppear, Math.random() * 2000);
+      }
+      appearAgain();
+
+      var bestTime = Infinity; // Higher Value
+
+      // Get the Click
+
+      document.getElementById("shape").onclick = function () {
+        document.getElementById("shape").style.display = "none";
+
+        var end = new Date().getTime();
+        var timeTaken = (end - start) / 1000;
+
+        document.getElementById("timeTaken").innerHTML = timeTaken + " s";
+
+        // Get the Best Time
+
+        if (timeTaken < bestTime) {
+          bestTime = timeTaken;
+          document.getElementById("best-time").innerHTML = bestTime + " s";
+          appearAgain();
+        } else {
+          document.getElementById("best-time").innerHTML = bestTime + " s";
+          appearAgain();
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<html>
+  <head>
+    <title>Javascript Form Validation</title>
+    <link href="FormCSS.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="body">
+    <form method="" action="" name="Form" onsubmit="return validateForm()">
+      <h2 class="heading">Registration Form</h2>
+
+      <div class="box">
+        <label class="full_name">Full Name</label>
+        <input
+          type="text"
+          name="fullName"
+          placeholder="Enter Your Name"
+          class="form-field1"
+          id="full_Name"
+          autocomplete="off"
+        />
+        <div class="error" id="full_name_Err"></div>
+      </div>
+
+      <div class="box">
+        <label class="email">Email Address</label>
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter Your Email Address"
+          class="form-field2"
+          id="email_address"
+          autocomplete="off"
+        />
+        <div class="error" id="email_Err"></div>
+      </div>
+
+      <div class="box">
+        <label class="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          class="form-field3"
+          id="password"
+          autocomplete="off"
+          placeholder="Enter Your Password"
+        />
+        <div class="error" id="password_Err"></div>
+      </div>
+
+      <div class="box">
+        <label class="confirm_password">Confirm Password</label>
+        <input
+          type="password"
+          name="confirmpassword"
+          class="form-field4"
+          id="confirm_password"
+          autocomplete="off"
+          placeholder="Confirm Password"
+        />
+        <div class="error" id="confirm_password_Err"></div>
+      </div>
+
+      <div class="box">
+        <label class="mobile">Mobile Number</label>
+        <input
+          type="text"
+          name="mobilenum"
+          placeholder="Enter Your Mobile Number"
+          class="form-field5"
+          id="mobile_number"
+          autocomplete="off"
+        />
+        <div class="error" id="mobile_num_Err"></div>
+      </div>
+
+      <div class="box">
+        <label class="country">Country</label>
+        <div class="option_box">
+          <select name="country" id="select_country">
+            <option>Select</option>
+            <option>Pakistan</option>
+            <option>America</option>
+            <option>London</option>
+            <option>Australia</option>
+          </select>
+        </div>
+        <div class="error" id="country_Err"></div>
+      </div>
+
+      <div class="box">
+        <label>Hobbies <i>(Optional)</i></label>
+        <div class="form_inline">
+          <label
+            ><input
+              type="checkbox"
+              name="hobbies"
+              value="sports"
+              class="select_hobbies"
+            />
+            Sports</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="hobbies"
+              value="movies"
+              class="select_hobbies"
+            />
+            Movies</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="hobbies"
+              value="music"
+              class="select_hobbies"
+            />
+            Music</label
+          >
+        </div>
+      </div>
+
+      <div class="box">
+        <label>Gender:</label>
+        <div class="form_inline" id="gender">
+          <label
+            ><input
+              type="radio"
+              name="gender"
+              value="male"
+              id="inputmale"
+              class="inputmale"
+            />Male</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="gender"
+              value="female"
+              id="inputfemale"
+              class="inputfemale"
+            />Female</label
+          >
+        </div>
+
+        <div class="error" id="gender_Err"></div>
+      </div>
+
+      <div class="box">
+        <input type="submit" name="submit" class="btn1" />
+      </div>
+    </form>
+
+    <script type="text/javascript">
+      // Defining a function to display error message
+      function printError(Id, Msg) {
+        document.getElementById(Id).innerHTML = Msg;
+      }
+
+      // Defining a function to validate form
+      function validateForm() {
+        // Retrieving the values of form elements
+        var fullname = document.Form.fullName.value;
+        var email = document.Form.email.value;
+        var password = document.Form.password.value;
+        var confirm_password = document.Form.confirmpassword.value;
+        var mobile_num = document.Form.mobilenum.value;
+        var country = document.Form.country.value;
+        var gender = document.Form.gender.value;
+        var hobbies = [];
+        var checkboxes = document.getElementsByName("hobbies");
+
+        for (var i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i].checked) {
+            // Populate hobbies array with selected values
+            hobbies.push(checkboxes[i].value);
+          }
+        }
+
+        // Defining error variables with a default value
+        var nameError =
+          (passwordError =
+          emailError =
+          confirm_passwordError =
+          mobile_numError =
+          country_Error =
+          genderError =
+            true);
+
+        //Validate Name
+        if (fullname.length == "") {
+          printError("full_name_Err", "*Please enter Your name");
+          var elem = document.getElementById("full_Name");
+          elem.classList.add("input-2");
+          elem.classList.remove("input-1");
+        } else {
+          var regex = /^[a-zA-Z\s]+$/;
+
+          if (regex.test(fullname) == false) {
+            printError("full_name_Err", "*Please enter your valid name");
+            nameError = false;
+            var elem = document.getElementById("full_Name");
+            elem.classList.add("input-2");
+            elem.classList.remove("input-1");
+          } else {
+            printError("full_name_Err", "");
+            nameError = false;
+            var elem = document.getElementById("full_Name");
+            elem.classList.add("input-1");
+            elem.classList.remove("input-2");
+          }
+        }
+
+        //Validate Email Address
+        if (email.length == "") {
+          printError("email_Err", "*Please enter your email");
+          var elem = document.getElementById("email_address");
+          elem.classList.add("input-2");
+          elem.classList.remove("input-1");
+        } else {
+          var regex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+          var emailblockReg =
+            /^([\w-\.]+@(?!yahoo.com)(?!hotmail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+
+          if (regex.test(email) == false) {
+            printError("email_Err", "*Please enter your valid email address.");
+            var elem = document.getElementById("email_address");
+            elem.classList.add("input-2");
+            elem.classList.remove("input-1");
+          } else if (emailblockReg.test(email) == false) {
+            printError("email_Err", "*No yahoo or hotmail emails.");
+            var elem = document.getElementById("email_address");
+            elem.classList.add("input-2");
+            elem.classList.remove("input-1");
+          } else {
+            printError("email_Err", " ");
+            emailError = false;
+            var elem = document.getElementById("email_address");
+            elem.classList.add("input-1");
+            elem.classList.remove("input-2");
+          }
+        }
+
+        //Validate Password
+        if (password.length == "") {
+          printError("password_Err", "*Please enter your password");
+          var elem = document.getElementById("password");
+          elem.classList.add("input-2");
+          elem.classList.remove("input-1");
+        } else {
+          var errors = [];
+
+          if (password.length < 8) {
+            errors.push("*Your password must be at Least 8 characters.");
+          }
+          if (password.search(/[a-z]/i) < 0) {
+            errors.push("*Your password must contain at least one letter.");
+          }
+          if (password.search(/[0-9]/) < 0) {
+            errors.push("*Your password must contain at least one digit.");
+          }
+          if (errors.length > 0) {
+            printError("password_Err", errors.join("<br>"));
+            var elem = document.getElementById("password");
+            elem.classList.add("input-2");
+            elem.classList.remove("input-1");
+          } else {
+            printError("password_Err", " ");
+            passwordError = false;
+            var elem = document.getElementById("password");
+            elem.classList.add("input-1");
+            elem.classList.remove("input-2");
+          }
+        }
+
+        //Confirm Password validation
+        if (confirm_password.length == "") {
+          printError("confirm_password_Err", "*Please confirm your password.");
+          var elem = document.getElementById("confirm_password");
+          elem.classList.add("input-2");
+          elem.classList.remove("input-1");
+        } else {
+          if (confirm_password != password) {
+            printError("confirm_password_Err", "*Password did not match");
+            var elem = document.getElementById("confirm_password");
+            elem.classList.add("input-2");
+            elem.classList.remove("input-1");
+          } else {
+            printError("confirm_password_Err", "");
+            confirm_passwordError = false;
+            var elem = document.getElementById("confirm_password");
+            elem.classList.add("input-1");
+            elem.classList.remove("input-2");
+          }
+        }
+
+        //Mobile Number validation
+        if (mobile_num.length == "") {
+          printError("mobile_num_Err", "*Please enter your mobile number");
+          var elem = document.getElementById("mobile_number");
+          elem.classList.add("input-2");
+          elem.classList.remove("input-1");
+        } else {
+          var regex = /^\d{11}$/;
+
+          if (regex.test(mobile_num) === false) {
+            printError("mobile_num_Err", "*Mobile number must be 11 digit");
+            var elem = document.getElementById("mobile_number");
+            elem.classList.add("input-2");
+            elem.classList.remove("input-1");
+          } else {
+            printError("mobile_num_Err", " ");
+            mobile_numError = false;
+            var elem = document.getElementById("mobile_number");
+            elem.classList.add("input-1");
+            elem.classList.remove("input-2");
+          }
+        }
+
+        //Country Validation
+        if (country == "Select") {
+          printError("country_Err", "*Please select your country");
+          var elem = document.getElementById("select_country");
+          elem.classList.add("input-4");
+          elem.classList.remove("input-3");
+        } else {
+          printError("country_Err", "");
+          country_Error = false;
+          var elem = document.getElementById("select_country");
+          elem.classList.add("input-3");
+          elem.classList.remove("input-4");
+        }
+
+        //Validate gender
+        if (gender == "") {
+          printError("gender_Err", "*Please select your gender.");
+          var elem = document.getElementById("gender");
+          elem.classList.add("input-4");
+          elem.classList.remove("input-3");
+        } else {
+          printError("gender_Err", "");
+          genderError = false;
+          var elem = document.getElementById("gender");
+          elem.classList.add("input-3");
+          elem.classList.remove("input-4");
+        }
+
+        // Prevent the form from being submitted if there are any errors
+
+        if (
+          nameError ||
+          emailError ||
+          passwordError ||
+          confirm_passwordError ||
+          mobile_numError ||
+          country_Error ||
+          genderError == true
+        ) {
+          return false;
+        } else {
+          // Creating a string from input data for preview
+          var userData =
+            "You've entered the following details: " +
+            "\n" +
+            "Name: " +
+            fullname +
+            "\n" +
+            "Email: " +
+            email +
+            "\n" +
+            "Mobile Number: " +
+            mobile_num +
+            "\n" +
+            "Country: " +
+            country +
+            "\n" +
+            "Gender: " +
+            gender +
+            "\n";
+
+          if (hobbies.length) {
+            userData += "Hobbies: " + hobbies.join(", ");
+          }
+          alert(userData);
+        }
+      }
+    </script>
+  </body>
+</html>

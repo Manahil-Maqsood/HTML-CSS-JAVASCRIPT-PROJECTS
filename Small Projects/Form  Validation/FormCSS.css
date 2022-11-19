@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  background: -webkit-radial-gradient(top left, #90f6fb, #2c3283);
+}
+form {
+  width: 300px;
+  padding: 15px 40px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  margin: 4% auto;
+}
+.heading {
+  text-align: center;
+  color: #efbe58;
+}
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+label i {
+  color: #999;
+  font-size: 80%;
+}
+input,
+select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #a9bae64a;
+}
+.box {
+  padding-bottom: 10px;
+}
+.form_inline {
+  border: 1px solid #ccc;
+  padding: 8px 10px 4px;
+  border-radius: 2px;
+}
+.form_inline label,
+.form_inline input {
+  display: inline-block;
+  width: auto;
+  padding-left: 13px;
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
+input[type="text"] {
+  outline: none;
+}
+input[type="password"] {
+  outline: none;
+}
+input[type="submit"] {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  background-color: #efbe58;
+  box-shadow: 0 3px 0 #bd432e;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #bd432e;
+  border-color: #bd432e;
+}
+.input-1 {
+  background-image: url(../JavaScript/119check.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 1px solid #01cc40;
+}
+.input-2 {
+  background-image: url(../JavaScript/119cancel.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 1px solid red;
+}
+.input-3 {
+  border: 1px solid #01cc40;
+}
+.input-4 {
+  border: 1px solid red;
+}
+select {
+  outline: none !important;
+}
