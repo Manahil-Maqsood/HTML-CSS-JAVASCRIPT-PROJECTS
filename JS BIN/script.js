@@ -1,12 +1,37 @@
 $(document).ready(function () {
-  //Focus Boxes onload
-  const prefocus = () => {
-    window.onload = () => {
-      $("#html-Box").focus();
-      setCaretToPos(document.getElementById("html-Box"), 147);
-    };
+  const initialValue = () => {
+    let defaultValue =
+      "<!DOCTYPE html>" +
+      "\n" +
+      "<html>" +
+      "\n" +
+      "<head>" +
+      "\n" +
+      '<meta charset="utf-8">' +
+      "\n" +
+      '<meta name="viewport" content="width=device-width">' +
+      "\n" +
+      "<title>Mini JS Bin</title>" +
+      "\n" +
+      "</head>" +
+      "\n" +
+      "<body>" +
+      "\n" +
+      "\n" +
+      "</body>" +
+      "\n" +
+      "</html>";
+    document.getElementById("html-Box").defaultValue = defaultValue;
+
+    var doc = document.getElementById("output-Box").contentWindow.document;
+    doc.open();
+    doc.write(
+      "<html><head><title></title><style type='text/css'></style></head><body><h4 style='font-family: Roboto, sans-serif; font-size: 15px; color: gray;'>Output</h4><div id='inlineIframe'></div></body></html>"
+    );
+    doc.close();
   };
-  prefocus();
+
+  initialValue();
 
   //function to set cursor position
   function setSelectionRange(input, selectionStart, selectionEnd) {
@@ -24,6 +49,7 @@ $(document).ready(function () {
   function setCaretToPos(input, pos) {
     setSelectionRange(input, pos, pos);
   }
+  setCaretToPos(document.getElementById("html-Box"), 147);
 
   //Set width Active Boxes
   const widthActiveBoxes = (activeBoxes) => {
@@ -68,36 +94,6 @@ $(document).ready(function () {
   LogicBox();
 
   const outPutLogic = () => {
-    let defaultValue =
-      "<!DOCTYPE html>" +
-      "\n" +
-      "<html>" +
-      "\n" +
-      "<head>" +
-      "\n" +
-      '<meta charset="utf-8">' +
-      "\n" +
-      '<meta name="viewport" content="width=device-width">' +
-      "\n" +
-      "<title>Mini JS Bin</title>" +
-      "\n" +
-      "</head>" +
-      "\n" +
-      "<body>" +
-      "\n" +
-      "\n" +
-      "</body>" +
-      "\n" +
-      "</html>";
-    document.getElementById("html-Box").defaultValue = defaultValue;
-
-    var doc = document.getElementById("output-Box").contentWindow.document;
-    doc.open();
-    doc.write(
-      "<html><head><title></title><style type='text/css'></style></head><body><h4 style='font-family: Roboto, sans-serif; font-size: 15px; color: gray;'>Output</h4><div id='inlineIframe'></div></body></html>"
-    );
-    doc.close();
-
     $("textarea").on("change keyup paste click", () => {
       $("#output-Box")
         .contents()
